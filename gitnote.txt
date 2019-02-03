@@ -128,3 +128,4 @@ git clone 地址
 查看本地分支和远程分支：git branch -a
 
 当前分支与远程分支进行关联：git push --set-upstream origin dev
+合并提交信息：git rebase -i commitid

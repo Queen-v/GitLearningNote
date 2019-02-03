@@ -1,0 +1,42 @@
+git版本控制-集中式和分布式
+集中式：只有一个中心版本库，有更新需提交至该中心版本库中保存；
+分布式：版本库处于本地，更新后可以推送至远端版本库；
+
+git配置信息
+全局配置：家目录/.gitconfig
+配置全局信息命令：
+git config --global user.name “gaoxiang”;
+git config --global user.email "704294893@qq.com";
+
+库的配置文件：.git/config
+配置库信息命令：
+git config user.name "gaoxiang";
+git config user.email "704294893@qq.com";
+
+
+git创建新仓库
+初始化空仓库：git init
+获取远程库
+git clone 版本库地址
+
+.gitignore（不追踪文件）在提交时可以使用“git add .” 来提交全部文件
+指定追踪的文件：如！test.php
+忽略某个文件：如test.php
+忽略一类文件：如*.php
+忽略文件夹：如/文件夹1
+忽略文件夹及其子目录的某个文件：如/文件夹1/**/test.php
+忽略文件夹及其子目录的某类文件：如/文件夹1/**/*.php
+
+将文件添加到暂存区：git add 文件名
+将暂存区提交到版本库：git commit -m “提交说明详情”
+查看版本库状态：git status
+移除暂存区的文件(unstage)：git rm --cached <file>   git reset HEAD  <file>
+丢弃工作目录中的修改：git checkout --<file>
+回退版本：git reset --hard <file>  备注：HEAD^ (HEAD^表示回退到上个版本,同理上上个版本则为HEAD^^
+从版本库和工作区同时中删除文件：git rm <file>
+从版本库中删除但保留工作区的文件：git rm --cached <file>
+更改文件名：git mv 原文件名  修改后文件名
+
+
+
+

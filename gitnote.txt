@@ -129,3 +129,8 @@ git clone 地址
 
 当前分支与远程分支进行关联：git push --set-upstream origin dev
 合并提交信息：git rebase -i commitid
+
+帮助：
+1、git help <verb>
+2、git <verb> --help
+如：git help add；

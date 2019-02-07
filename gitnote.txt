@@ -139,3 +139,9 @@ git clone 地址
 如：git help add；
 删除远程分支：git push origin --delete dev
 
+
+diff
+1、暂存区和工作区内容比较：git diff [file]
+2、版本库内容与暂存区内容比较：git diff --cached [file]
+3、版本库内容与工作区内容比较：git diff HEAD [file]
+4、指定版本库提交与工作区内容比较：git diff commitid 

@@ -145,3 +145,15 @@ diff
 2、版本库内容与暂存区内容比较：git diff --cached [file]
 3、版本库内容与工作区内容比较：git diff HEAD [file]
 4、指定版本库提交与工作区内容比较：git diff commitid 
+
+
+reverrt
+撤销之前版本的某个提交（commitid），但是保留该版本之后的提交：git  revert commitid ；
+
+
+reset
+如：git reset --hard commitid
+--soft – 缓存区和工作目录都不会被改变
+--mixed – 默认选项。缓存区和你指定的提交同步，但工作目录不受影响
+--hard – 缓存区和工作目录都同步到你指定的提交
+
